@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Staatliches&display=swap');
+
+
+
+:root{
+    /* zmienne dla kolorów */
+    --primary-100:#B2DFDB;
+    --primary-200:#80CBC4;
+    --primary-300:#4DB6AC;
+    --primary-400:#26A69A;
+    --primary-500:#009688;
+    --primary-600:#00897B;
+    --primary-700:#00796B;
+    --primary-800:#00695C;
+    --primary-900:#004D40;
+}
