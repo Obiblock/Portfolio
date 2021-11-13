@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Staatliches&display=swap');
 
-
+body{
+    background-color: var(--primary-200);
+    color: var(--primary-900);
+    font-family: var(--body-font);
+    margin: 0;
+}
 
 :root{
     /* zmienne dla kolorów */
@@ -13,4 +18,18 @@
     --primary-700:#00796B;
     --primary-800:#00695C;
     --primary-900:#004D40;
+
+    /*zmienne dla czcionek*/
+    --body-font: 'Lato', sans-serif;
+    --header-font: 'Staatliches', cursive;
+}
+
+/*sekcja nagłówkowa*/
+
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
