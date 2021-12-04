@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Staatliches&display=swap');
 
 body{
-    background-color: var(--primary-200);
-    color: var(--primary-900);
-    font-family: var(--body-font);
+    background-color: var(--primary-500);
+    color: var(--primary-100);
+    font-family: var(--header-font);
     margin: 0;
 }
 
@@ -32,4 +32,86 @@ body{
     justify-content: center;
     align-items: center;
 
+}
+
+.nav-center{
+    width: 90vx;
+    max-width: 1000px;
+}
+
+.nav-header{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header img{
+    width: 200px;
+}
+
+.btn
+{
+    color: var(--primary-100);
+    background-color: var(--primary-900);
+    border: transparent;
+    padding: 0.4rem 0.7rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-links
+{
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition-duration: 0.4s;
+}
+
+.nav-link   
+{
+    padding: 1rem 0;
+    text-align: center;
+    letter-spacing: 2px;
+    display: block;
+    font-size: 1.3rem;      
+}
+
+.show-links{
+    height: 313px;
+}
+
+/* reguła dużego ekranu */
+
+@media screen and (min-width:650px){
+    .nav-btn{
+        display: none;
+    }
+    .nav-links{
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-center{
+        display: flex;
+        align-items: center;
+    }
+    .nav-link{
+        border-top: none;
+        margin-right: 1.5rem;
+        padding: 0;
+    }
+    .nav-header{
+        margin-right: 1.7rem;
+    }
+    .contact-link{
+        margin-right: 0;
+        margin-left: auto;
+    }
 }
